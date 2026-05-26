@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mediaquery.css" />
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <div class="nav">
+        <nav>
+            <div class="flex">
+                <div>
+                    <img src="/images/img1.png" height="50px" width="100px" alt="img"></img>
+                </div>
+                <div class="container">
+                    <div><a href="/index.html">Home</a></div>
+                    <div><a href="index.html#Collections">Collections</a></div>
+                    <div><a href="index.html#Features">Accessories</a></div>
+                    <div><a href="index.html#Shop">Shop</a></div>
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <div><a href="/cart.html" title="cart"><i class="fa-solid fa-cart-shopping"></i></a></div>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+   <div class="buy">
+  <div class="buy-container">
+    <img id="product-img" src="/images/product1.png" alt="product">
+    <div>
+      <h2 class="buy-product" id="product-name">VIVO X200</h2>
+      <div class="review">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+        <span>4.5 review</span>
+      </div>
+      <h2 class="product-price">RS.<span id="total-price">94999</span></h2>
+    </div>
+  </div>
+
+  <div class="checkout-container">
+    <div class="count-container">
+      <button class="prodcount" onclick="Decrement()">−</button>
+      <input class="by-quan" id="quantity" value="1" readonly placeholder="qty"/>
+      <button class="prodcount" onclick="Increment()">+</button>
+    </div>
+    <div class="price-details">
+      <p>Total Price: ₹<span id="total-price">94999</span></p>
+    </div>
+    <button class="buy-btn delete-btn" onclick="remove()">Delete</button>
+    <button class="buy-btn proceed-btn" onclick="checkout()">Proceed to Checkout</button>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="Footer">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h2>About us</h2>
+                <p>Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus
+                    ac.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Information</h4>
+                <a href="#">Search</a>
+                <a href="#">Store Location</a>
+                <a href="#">Order & Return</a>
+                <a href="#">Private Policy</a>
+            </div>
+            <div class="footer-box">
+                <h4>Support</h4>
+                <a href="#">Search</a>
+                <a href="#">Store Location</a>
+                <a href="#">Order & Return</a>
+                <a href="#">Private Policy</a>
+            </div>
+            <div class="footer-box">
+                <h4>Help</h4>
+                <a href="#">Help & FAQ's</a>
+                <a href="#">Information</a>
+                <a href="#">Shipping Details</a>
+                <a href="#">Online Payment</a>
+            </div>
+            <div class="footer-box subscribe-box">
+                <input type="email" placeholder="Email" class="email-input">
+                <button class="signup-btn">Sign Up</button>
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            All Right Reserved © 2025, PHONO
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/sript.js"></script>
+
+</html>

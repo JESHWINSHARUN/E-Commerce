@@ -1,0 +1,128 @@
+@media (max-width: 768px) {
+  .container > div,
+  .flex > div {
+    padding: 0px 0px;
+  }
+
+  .nav {
+    width: 100%;
+    font-size: 8px;
+  }
+
+  .Home1 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .home-container {
+    padding-left: 20px;
+    padding-top: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .shop-btn {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .btn1 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .home-footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hf-container1 {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .coll-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .g-container h2 {
+    font-size: 20px;
+  }
+
+  .entertainment {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .entertainment-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .entertainment-item {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .Product-container {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .review {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #Shop {
+    margin: 50px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .email-input,
+  .signup-btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+  .buy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image img {
+    width: 90%;
+  }
+
+  .product-info {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

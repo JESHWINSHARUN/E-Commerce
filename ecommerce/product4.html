@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mediaquery.css" />
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="nav">
+        <nav>
+            <div class="flex">
+                <div>
+                    <img src="/images/img1.png" height="50px" width="100px" alt="img"></img>
+                </div>
+                <div class="container">
+                    <div><a href="/index.html">Home</a></div>
+                    <div><a href="index.html#Collections">Collections</a></div>
+                    <div><a href="index.html#Features">Accessories</a></div>
+                    <div><a href="index.html#Shop">Shop</a></div>
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <a href="/cart.html" title="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="Vivo">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="/images/product4.png" alt="iQOO Neo 10 5G" />
+            </div>
+
+            <div class="product-info">
+                <h2 class="model"></h2>
+                <ul class="spec-list">
+                    <li><span>Brand:</span> VIVO</li>
+                    <li><span>Operating System:</span> One UI 7, Android 15</li>
+                    <li><span>RAM Memory:</span> 12 GB / 16 GB</li>
+                    <li><span>CPU Model:</span> Snapdragon 8 Gen 4</li>
+                    <li><span>CPU Speed:</span> Octa-Core (Up to 3.6 GHz)</li>
+                </ul>
+                <h3 class="price">Rs.33,999.00</h3>
+                <button class="buy-btn" onclick="buyNow('iQOO Neo 10 5G', 33999, '/images/product4.png')">Buy
+                    Now</button>
+
+                <button class="buy-btn" onclick="addToCart('iQOO Neo 10 5G', 33999, '/images/product4.png')">Add To Cart</button>
+
+                <div class="about">
+                    <h3>About this item</h3>
+                    <ul>
+                        <li>📸 Camera: 200MP Wide + 12MP Ultra-Wide + 50MP Telephoto + 10MP Periscope</li>
+                        <li>🖥️ Display: 6.8" QHD+ AMOLED 2X, 120Hz, Vision Booster</li>
+                        <li>🔋 Battery: 5000mAh with 45W Wired & 25W Wireless Charging</li>
+                        <li>📶 Connectivity: 5G, Wi-Fi 7, Bluetooth 5.4, Ultra Wideband (UWB)</li>
+                        <li>🎥 Certifications: HDR10+, Dolby Atmos, IP68 Dust/Water Resistant</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('desc')">Description</button>
+            <button class="tab-btn" onclick="showTab('shipping')">Shipping & Returns</button>
+            <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+        </div>
+
+        <div class="tab-content active" id="desc">
+            <p>Mobile phones are pivotal in our daily lives. Living without a mobile phone is challenging in this
+                contemporary environment. A mobile phone is a broadband network that is a compact, small device used to
+                send and receive speech, video, and other data types. Mobile phone usage offers additional benefits and
+                features.</p>
+            <h4>Design and Build</h4>
+            <p>It distinguishes out from the other smartphone competitors because of its fresh, sophisticated colors,
+                which when combined with TFT LCD Display, give it a luxurious appearance. Its approximate weight is
+                195.00 g dimensions are 164.5 x 76.9 x 8.4mm making it convenient and comfortable to hold. This phone
+                includes Bluetooth and GPS connectivity as well as expandable storage.</p>
+            <h4>Display and Screen</h4>
+            <p>A 6.20-inch screen with a resolution of 1080x2340 pixels displays all types of entertainment great, and
+                the colors appear to be rather realistic. Standard Wi-Fi is supported up to 802.11 b/g/n with Type-C
+                USB. As its vendor Sensors like Face unlock, Fingerprint, Proximity and Accelerometer are supported. The
+                speaker grill and audio jack are located at the bottom.</p>
+            <h4>Hardware and Performance</h4>
+            <p>The latest smartphone features a 14nm chipset-based 1.8GHz Octa-core Exynos 7904 processor with 4GB of
+                RAM and 64GB of storage. The 5000mAh battery is compatible with the Aspect ratio 19.5:9.The phone is
+                among the best performances in its category because of this combination. On low-end hardware, the
+                Experience UI for phones has been tuned to operate without a hitch. The icons and appearance are nearly
+                identical to One UI. The software is reliable, sophisticated, and enjoyable.</p>
+        </div>
+
+        <div class="tab-content" id="shipping">
+            <h4>Shipping</h4>
+            <p>🚚 Free shipping available across India.</p>
+            <p>📦 Estimated delivery time: 3-5 business days.</p>
+            <p>🔄 Easy returns within 10 days of delivery.</p>
+        </div>
+
+        <div class="tab-content" id="reviews">
+            <h4>Customer Reviews</h4>
+            <p>⭐ 4.6/5 based on 1,234 ratings</p>
+            <p>"Excellent phone with amazing camera!" - Akash R.</p>
+            <p>"Battery life could be better, but display is top-notch." - Priya M.</p>
+        </div>
+    </div>
+
+
+    <div id="Shop">
+        <h1>RELATED PRODUCTS</h1>
+        <div class="Product-container">
+            <div class="product">
+                <img src="/images/product1.png" alt="product1" height="300px">
+                <a href="/product.html" target="_blank">
+                    <h2>VIVO X100 PRO</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star-half-stroke"></i></div>
+                    <div><span>4.5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.60,999.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product2.png" alt="product2" height="300px">
+                <a href="/product2.html">
+                    <h2>Galaxy S25 Ultra</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><span>5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.1,29,999.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product3.png" alt="product3" height="300px">
+                <a href="/product3.html">
+                    <h2>iPhone 16 Pro Max</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star-half-stroke"></i></div>
+                    <div><span>4.5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.1,32,900.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product4.png" alt="product4" height="300px">
+                <a href="/product4.html">
+                    <h2> iQOO Neo 10 5G</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star"></i></div>
+                    <div><span>4 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.33,999.00</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="Shop">
+        <h1>RECOMMENDED PRODUCTS</h1>
+        <div class="Product-container">
+            <div class="product">
+                <img src="/images/product1.png" alt="product1" height="300px">
+                <a href="/product.html">
+                    <h2>VIVO X200</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star-half-stroke"></i></div>
+                    <div><span>4.5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.69,999.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product2.png" alt="product2" height="300px">
+                <a href="/product2.html">
+                    <h2>Galaxy S25 Ultra</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><span>5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.1,29,999.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product3.png" alt="product3" height="300px">
+                <a href="/product3.html">
+                    <h2>iPhone 16 Pro Max</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star-half-stroke"></i></div>
+                    <div><span>4.5 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.1,32,900.00</h2>
+            </div>
+            <div class="product">
+                <img src="/images/product4.png" alt="product4" height="300px">
+                <a href="/product4.html">
+                    <h2> iQOO Neo 10 5G</h2>
+                </a>
+                <div class="review">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-regular fa-star"></i></div>
+                    <div><span>4 review</span></div>
+                </div>
+                <h2 class="product-price">Rs.33,999.00</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer" id="Footer">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h2>About us</h2>
+                <p>Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt
+                    risus
+                    ac.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Information</h4>
+                <a href="#">Search</a>
+                <a href="#">Store Location</a>
+                <a href="#">Order & Return</a>
+                <a href="#">Private Policy</a>
+            </div>
+            <div class="footer-box">
+                <h4>Support</h4>
+                <a href="#">Search</a>
+                <a href="#">Store Location</a>
+                <a href="#">Order & Return</a>
+                <a href="#">Private Policy</a>
+            </div>
+            <div class="footer-box">
+                <h4>Help</h4>
+                <a href="#">Help & FAQ's</a>
+                <a href="#">Information</a>
+                <a href="#">Shipping Details</a>
+                <a href="#">Online Payment</a>
+            </div>
+            <div class="footer-box subscribe-box">
+                <input type="email" placeholder="Email" class="email-input">
+                <button class="signup-btn">Sign Up</button>
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            All Right Reserved © 2025, PHONO
+        </div>
+    </footer>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+<script src="/sript.js"></script>
+
+</html>
